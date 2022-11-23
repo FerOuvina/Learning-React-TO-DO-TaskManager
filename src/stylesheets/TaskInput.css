@@ -1,0 +1,38 @@
+:root {
+  --white: #fbeee6;
+  --yellow: #ffe5d8;
+  --pink: #ffcad4;
+  --red: #f3abb6;
+  --brown: #9f8189;
+}
+
+.taskForm__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+.taskForm__container--input {
+  font-size: 1.5rem;
+  width: 400px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid var(--yellow);
+  outline: none;
+  background: var(--pink);
+  color: #000;
+  padding: 14px 32px 14px 16px;
+}
+
+.taskForm__container--btn {
+  font-size: 1.5rem;
+  padding: 14px;
+  border: 1px solid var(--yellow);
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  text-transform: capitalize;
+  background: var(--pink);
+  color: #000;
+}

@@ -1,38 +1,87 @@
+:root {
+  --white: #fbeee6;
+  --yellow: #ffe5d8;
+  --pink: #ffcad4;
+  --red: #f3abb6;
+  --brown: #9f8189;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(var(--white), var(--yellow), var(--pink), var(--red), var(--brown));
+  height: 100vh;
+}
+
+/* Main App Styles */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gif Container */
+.gif__container {
+  width: 100%;
+  margin: 0.5rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gif__container--gif {
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Tasks Container */
+.App__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  min-height: 500px;
+  max-height: 500px;
+  border-radius: 20px;
+  background: #f3abb61c;
+  box-shadow: 5px 5px 5px 2px var(--brown);
+}
+
+.App__container--div {
+  width: 200px;
+  margin: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid var(--yellow);
+  background: var(--pink);
+}
+
+.App__container--title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.36);
+  border-radius: 5px;
+  color: transparent;
+  background: linear-gradient(var(--white), var(--yellow), var(--pink), var(--red));
+  -webkit-text-stroke: 0.04em #ffffff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rainbow 30s linear infinite;
+}
+
+@keyframes rainbow {
+  100% {
+      background-position: 0 30rem;
   }
 }

@@ -1,0 +1,51 @@
+:root {
+  --white: #fbeee6;
+  --yellow: #ffe5d8;
+  --pink: #ffcad4;
+  --red: #f3abb6;
+  --brown: #9f8189;
+}
+
+.task__container {
+  width: 500px;
+  min-height: 60px;
+  margin: 0.3em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background: var(--yellow);
+}
+
+.task__container:nth-child(3n + 1) {
+  background: var(--white);
+}
+.task__container:nth-child(3n + 2) {
+  background: var(--yellow);
+}
+.task__container:nth-child(3n + 3) {
+  background: var(--pink);
+}
+.task__container:nth-child(3n + 4) {
+  background: var(--red);
+}
+
+.task__container.task__container--finished {
+  text-decoration: line-through;
+}
+
+.task__container--text {
+  width: 100%;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+
+.task__container--icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  padding-right: 1rem;
+}
