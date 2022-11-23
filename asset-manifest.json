@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Learning-React-TO-DO-TaskManager/static/css/main.9677340e.css",
+    "main.js": "/Learning-React-TO-DO-TaskManager/static/js/main.f02e0634.js",
+    "static/media/gissphy.gif": "/Learning-React-TO-DO-TaskManager/static/media/gissphy.2e85927c7adf86abe4e6.gif",
+    "index.html": "/Learning-React-TO-DO-TaskManager/index.html",
+    "main.9677340e.css.map": "/Learning-React-TO-DO-TaskManager/static/css/main.9677340e.css.map",
+    "main.f02e0634.js.map": "/Learning-React-TO-DO-TaskManager/static/js/main.f02e0634.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9677340e.css",
+    "static/js/main.f02e0634.js"
+  ]
+}
